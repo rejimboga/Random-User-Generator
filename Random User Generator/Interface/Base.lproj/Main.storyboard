@@ -24,6 +24,21 @@
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="97.767857142857139"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="MLB-4l-hvT">
+            <objects>
+                <viewController id="eG8-kJ-hDt" customClass="DetailsViewController" customModule="Random_User_Generator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OAM-HC-HAP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="41r-Nh-u98"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nb4-Oq-yAV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957" y="98"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="u6i-he-UgU">
             <objects>
