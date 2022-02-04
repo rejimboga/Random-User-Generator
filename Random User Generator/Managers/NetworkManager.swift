@@ -17,7 +17,7 @@ class NetworkManager {
         return URL(string: "https://randomuser.me/api/?page=\(page)&results=\(count)")
     }
     
-    func getUsers(page: Int, count: Int, completionBlock: @escaping(([Results]) -> ())) {
+    func getUsers(page: Int, count: Int, completionBlock: @escaping(([UserModel]) -> ())) {
         guard let url = createGetUserURL(page: page, count: count) else { return }
         
         AF.request(url).response { response in
@@ -25,7 +25,7 @@ class NetworkManager {
             guard let responseData = response.data else { return }
             
             do {
-                let responseModel = try JSONDecoder().decode(Json4Swift_Base.self, from: responseData)
+                let responseModel = try JSONDecoder().decode(BaseResponse.self, from: responseData)
                 completionBlock(responseModel.results ?? [])
             } catch {
                 debugPrint(error)
